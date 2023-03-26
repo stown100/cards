@@ -1,0 +1,67 @@
+.Card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &__img {
+    width: 100%;
+    max-height: 100%;
+  }
+  &__description {
+    padding: 0 20px;
+  }
+  &__badge {
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__badgeTop {
+    background-color: green;
+  }
+  &__badgeNew {
+    background-color: red;
+  }
+}
+
+.Card:hover {
+  -webkit-transform: scale(1.05); /* Safari and Chrome */
+  -moz-transform: scale(1.05); /* Firefox */
+  -ms-transform: scale(1.05); /* IE 9 */
+  -o-transform: scale(1.05); /* Opera */
+  transform: scale(1.05);
+  position: relative;
+  z-index: 20;
+}
+
+.Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &__brandName {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  &__price {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+  }
+}
